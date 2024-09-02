@@ -1,7 +1,8 @@
-package com.designpattern.factory.example2;
+package com.designpattern.factory.abstractfactorypattern;
 
-public class CourseFactory {
-  public static AbstractCourse createCourse(String courseName) {
+public class OnlineCourseFactory extends AbstractCourseFactory {
+  @Override
+  protected AbstractCourse getCourse(String courseName) {
     AbstractCourse abstractCourse = null;
 
     if (courseName.equalsIgnoreCase("ONet")) {
@@ -10,8 +11,6 @@ public class CourseFactory {
       abstractCourse = new OJava();
     }
 
-    abstractCourse.createCourseMaterial();
-    abstractCourse.createCourseSchedule();
     return abstractCourse;
   }
 }

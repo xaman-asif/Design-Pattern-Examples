@@ -1,4 +1,6 @@
-package com.designpattern.factory.example1;
+//https://masnun.com/2013/06/21/design-pattern-factory-method.html
+
+package com.designpattern.factory.factorypattern;
 
 public class MediaFactory {
   public static Media factory (String mediaType) {

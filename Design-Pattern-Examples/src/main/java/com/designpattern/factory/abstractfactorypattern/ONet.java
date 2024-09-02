@@ -1,20 +1,20 @@
-package com.designpattern.factory.example2;
+package com.designpattern.factory.abstractfactorypattern;
 
 public class ONet extends AbstractCourse {
 
   public ONet() {
-    name = "Online .Net";
+    name = "Online ONet";
     duration = 1.30;
   }
 
   @Override
   public void createCourseMaterial() {
-    System.out.println("Creating Online Course Material for .NET");
+    System.out.println("Creating Online Course Material for ONet");
   }
 
   @Override
   public void createCourseSchedule() {
-    System.out.println("Creating Online Course Schedule for .NET");
+    System.out.println("Creating Online Course Schedule for ONet");
   }
 
   @Override

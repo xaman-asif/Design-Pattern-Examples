@@ -1,20 +1,20 @@
-package com.designpattern.factory.example2;
+package com.designpattern.factory.abstractfactorypattern;
 
-public class OJava extends AbstractCourse {
+public class CNet extends AbstractCourse {
 
-  public OJava() {
-    name = "Online Java";
+  public CNet() {
+    name = "Online CNet";
     duration = 2.00;
   }
 
   @Override
   public void createCourseMaterial() {
-    System.out.println("Creating Online Course Material for Java");
+    System.out.println("Creating Online Course Material for CNet");
   }
 
   @Override
   public void createCourseSchedule() {
-    System.out.println("Creating Online Course Schedule for Java");
+    System.out.println("Creating Online Course Schedule for CNet");
   }
 
   @Override

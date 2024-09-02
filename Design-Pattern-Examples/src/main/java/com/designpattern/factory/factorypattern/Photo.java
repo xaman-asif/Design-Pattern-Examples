@@ -1,4 +1,4 @@
-package com.designpattern.factory.example1;
+package com.designpattern.factory.factorypattern;
 
 public class Photo implements Media {
   @Override
