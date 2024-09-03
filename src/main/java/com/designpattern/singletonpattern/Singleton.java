@@ -1,6 +1,6 @@
 //Double Checked Lock Approach
 
-package com.designpattern.factory.singletonpattern;
+package com.designpattern.singletonpattern;
 
 public class Singleton {
   private volatile static Singleton uniqueInstance;

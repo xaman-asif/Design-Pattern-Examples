@@ -1,6 +1,6 @@
 //Using Lock Approach
 
-package com.designpattern.factory.singletonpattern;
+package com.designpattern.singletonpattern;
 
 public class Singleton2 {
 
