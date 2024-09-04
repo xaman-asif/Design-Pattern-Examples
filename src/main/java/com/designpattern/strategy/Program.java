@@ -7,7 +7,7 @@ public class Program {
     Fighter fighter = new Fighter();
     Random random = new Random();
 
-    fighter.health = random.nextInt(1, 100);
+    fighter.health = random.nextInt(99);
 
     if (fighter.health <= 50)
     {
