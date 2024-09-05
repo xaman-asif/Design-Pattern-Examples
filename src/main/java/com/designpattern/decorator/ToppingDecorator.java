@@ -1,9 +1,9 @@
 package com.designpattern.decorator;
 
-public abstract class ToppingDecorator implements IPizza {
-  protected IPizza tempPizza;
+public abstract class ToppingDecorator implements Pizza {
+  protected Pizza tempPizza;
 
-  public ToppingDecorator(IPizza newPizza) {
+  public ToppingDecorator(Pizza newPizza) {
     tempPizza = newPizza;
   }
 

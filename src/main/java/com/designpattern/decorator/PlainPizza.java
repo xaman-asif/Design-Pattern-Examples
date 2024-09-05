@@ -1,6 +1,6 @@
 package com.designpattern.decorator;
 
-public class PlainPizza implements IPizza {
+public class PlainPizza implements Pizza {
   @Override
   public String getDescription() {
     return "Thin Dough";

@@ -2,7 +2,7 @@ package com.designpattern.decorator;
 
 public class Mozzarella extends ToppingDecorator {
 
-  public Mozzarella(IPizza newPizza) {
+  public Mozzarella(Pizza newPizza) {
     super(newPizza);
 
     System.out.println("Adding Dough");

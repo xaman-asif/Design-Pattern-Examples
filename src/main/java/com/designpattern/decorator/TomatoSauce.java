@@ -2,7 +2,7 @@ package com.designpattern.decorator;
 
 public class TomatoSauce extends ToppingDecorator {
 
-  public TomatoSauce(IPizza newPizza) {
+  public TomatoSauce(Pizza newPizza) {
     super(newPizza);
 
     System.out.println("Adding Sauce");
