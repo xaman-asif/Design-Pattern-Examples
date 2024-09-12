@@ -1,4 +1,4 @@
-package com.designpattern.observer.simple;
+package com.designpattern.observer.example1;
 
 public class NewsChannel implements Channel {
   private String news;
