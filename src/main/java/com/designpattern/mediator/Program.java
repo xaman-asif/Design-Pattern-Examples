@@ -2,13 +2,17 @@ package com.designpattern.mediator;
 
 public class Program {
   public static void main(String[] args) {
-    var personOne = new UserOne("Moin");
-    personOne.setMessage("Hi Sujon, How are you?");
+    IChatMediator chatMediator = new ChatMediator();
 
-    var personTwo = new UserTwo("Sujon");
-    personTwo.setMessage("I am fine, but where is my money?");
+    User me = new UserOne(chatMediator, "Forhad");
+    User person1 = new UserOne(chatMediator, "Shuvo");
+    User person2 = new UserOne(chatMediator, "Shujon");
+    User person3 = new UserOne(chatMediator, "Moin");
 
-    personOne.sendMessage(personTwo);
-    personTwo.sendMessage(personOne);
+    chatMediator.addPerson(person1);
+    chatMediator.addPerson(person2);
+    chatMediator.addPerson(person3);
+
+    me.send("Hi All, How are you?");
   }
 }

@@ -1,16 +1,18 @@
 package com.designpattern.mediator;
 
 public class UserOne extends User {
-  public UserOne(String name) {
-    super(name);
+  public UserOne(IChatMediator IChatMediator, String name) {
+    super(IChatMediator, name);
   }
 
   @Override
-  protected void userChecking() {
-    for (User person: personList) {
-      if (person.getClass().equals(UserTwo.class)) {
-        System.out.println("From " + name + ":" + message);
-      }
-    }
+  public void send(String message) {
+    System.out.println(name + " :Sending Message=" + message);
+    IChatMediator.sendMessage(message, this);
+  }
+
+  @Override
+  public void receive(String message) {
+    System.out.println(name + " :Received Message:" + message);
   }
 }
