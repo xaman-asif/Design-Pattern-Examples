@@ -18,21 +18,22 @@ public class CloseState implements IGateState{
 
   @Override
   public void openGate() {
-
+    gate.currentState = 2;
+    System.out.println("The gate has been closed successfully........");
   }
 
   @Override
   public void closeGate() {
-
+    System.out.println("The gate is already closed. You cannot close it again!!");
   }
 
   @Override
   public void lockGate() {
-
+    System.out.println("The gate is locked. So you cannot close this gate!!\"");
   }
 
   @Override
   public void unlockGate() {
-
+    System.out.println("The gate is unlocked, so it is already closed!!!!");
   }
 }

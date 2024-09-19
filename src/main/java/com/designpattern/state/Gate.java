@@ -15,14 +15,14 @@ public class Gate {
       currentState = opened;
       System.out.println("The gate is now opened from closed state");
     } else if (currentState == locked) {
-      System.out.println("Please unlock the gate and open it");
+      System.out.println("Please unlock the gate and open it...");
     } else if (currentState == unlocked) {
       currentState = opened;
       System.out.println("The gate is now unlocked and opended");
     }
   }
 
-  public void CloseGate()
+  public void closeGate()
   {
     if (currentState == opened)
     {
@@ -44,7 +44,7 @@ public class Gate {
     }
   }
 
-  public void LockGate()
+  public void lockGate()
   {
     if (currentState == opened)
     {
@@ -66,7 +66,7 @@ public class Gate {
     }
   }
 
-  public void UnLockGate()
+  public void unlockGate()
   {
     if (currentState == opened)
     {
